@@ -1,782 +1,234 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Github Landing Page Responsive UI Clone</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GitHub: Where the world builds software · GitHub</title>
-    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-    <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-    <link rel="alternate icon"  type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-    <link rel="icon"  type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+    <title>Student Help: Tutoring for All Ages</title>
+    <link rel="stylesheet" href="src/assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
 <header>
-<div class="container">
-    <nav>
-        <div class="nav-logo">
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="nav-menu">
-            <div class="menu-close-icon ">
-                <i class="fas fa-times nav-toggle-btn"></i>
+    <div class="container">
+        <nav>
+            <div class="nav-logo">
+                <a href="#"><img src="src/assets/images/student-help-logo.png" alt="Student Help Logo" class="logo-img"></a>
             </div>
-            <div class="nav-main-menu">
-                <ul class="nav-main-links">
-                    <li class="nav-main-item">
-                        <a href="#" class="nav-main-link">
-                            <span class="nav-main-link-text">Why Github?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="nav-dropdown-menu">
-                            <div class="dropdown-header">
-                                <h3 class="dropdown-menu-title"><a href="#">Features</a></h3>
+            <div class="nav-menu">
+                <div class="menu-close-icon">
+                    <i class="fas fa-times nav-toggle-btn"></i>
+                </div>
+                <div class="nav-main-menu">
+                    <ul class="nav-main-links">
+                        <li class="nav-main-item">
+                            <a href="#" class="nav-main-link">
+                                <span class="nav-main-link-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a href="#about" class="nav-main-link">
+                                <span class="nav-main-link-text">About</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a href="#services" class="nav-main-link">
+                                <span class="nav-main-link-text">Services</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="nav-dropdown-menu">
+                                <div class="dropdown-header">
+                                    <h3 class="dropdown-menu-title"><a href="#services">Tutoring Programs</a></h3>
+                                </div>
+                                <div class="dropdown-body">
+                                    <ul class="nav-dropdown-links">
+                                        <li class="nav-dropdown-item">
+                                            <a href="#primary" class="nav-dropdown-link">Primary School</a>
+                                        </li>
+                                        <li class="nav-dropdown-item">
+                                            <a href="#highschool" class="nav-dropdown-link">High School</a>
+                                        </li>
+                                        <li class="nav-dropdown-item">
+                                            <a href="#university" class="nav-dropdown-link">University</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="dropdown-body">
-                                <ul class="nav-dropdown-links">
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Code review</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Project management</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Integrations</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Packages</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Security</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Team management</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Hosting</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Mobile</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-footer dropdown-footer-bold">
-                                <ul class="nav-dropdown-links">
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Customer stories</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Security</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-main-item">
-                        <a href="#" class="nav-main-link">
-                            <span class="nav-main-link-text">Team</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a href="#" class="nav-main-link">
-                            <span class="nav-main-link-text">Enterprise</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a href="#" class="nav-main-link">
-                            <span class="nav-main-link-text">Explore</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="nav-dropdown-menu">
-                            <div class="dropdown-header">
-                                <h3 class="dropdown-menu-title"><a href="#">Explore Github</a></h3>
-                            </div>
-                            <div class="dropdown-body">
-                                <ul class="nav-dropdown-links">
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Learn &amp; contribute</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Topics</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Collections</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Trending</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Learning Lab</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Open source guides</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-footer">
-                                <ul class="nav-dropdown-links">
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Connect with others</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Events</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Community forum</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">GitHub Education</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">GitHub Stars program</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-main-item">
-                        <a href="#" class="nav-main-link">
-                            <span class="nav-main-link-text">Marketplace</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a href="#" class="nav-main-link">
-                            <span class="nav-main-link-text">Pricing</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="nav-dropdown-menu">
-                            <div class="dropdown-header">
-                                <h3 class="dropdown-menu-title"><a href="#">Plans</a></h3>
-                            </div>
-                            <div class="dropdown-body">
-                                <ul class="nav-dropdown-links">
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Compare plans</a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Contact Sales</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-footer dropdown-footer-bold">
-                                <ul class="nav-dropdown-links">
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Nonprofit </a>
-                                    </li>
-                                    <li class="nav-dropdown-item">
-                                        <a href="#" class="nav-dropdown-link">Education </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-form">
-                <div class="search-form">
-                    <input type="text" placeholder="Search Github">
-                    <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="">
-                    <div class="search-hint">
-                        <i class="fas fa-search"></i>
-                        <a href="#" class="search-text"><span>mustafadalga</span></a>
-                        <a href="#" class="all-github"><span>All Github</span> <i class="fas fa-level-down-alt"></i></a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a href="#contact" class="nav-main-link">
+                                <span class="nav-main-link-text">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-form">
+                    <div class="nav-btn-wrap">
+                        <a href="#contact" class="btn btn-register">Get Started</a>
                     </div>
                 </div>
-                <div class="nav-btn-wrap">
-                    <a href="#" class="btn btn-login">Sign in</a>
-                    <a href="#" class="btn btn-register">Sign up</a>
-                </div>
             </div>
-        </div>
-        <div class="nav-mobile">
-            <a href="#" class="btn btn-register">Sign up</a>
-            <i class="fas fa-bars nav-toggle-btn"></i>
-        </div>
-    </nav>
-</div>
+            <div class="nav-mobile">
+                <a href="#contact" class="btn btn-register">Get Started</a>
+                <i class="fas fa-bars nav-toggle-btn"></i>
+            </div>
+        </nav>
+    </div>
 </header>
-
 
 <section class="hero">
     <div class="container">
         <div class="hero-content">
             <div class="hero-text-wrap">
                 <div class="hero-text">
-                    <h1 class="hero-title ff-inter">Built for developers</h1>
-                    <p class="hero-description">GitHub is a development platform inspired by the way you work. From <a href="#">open source</a> to
-                        <a href="#">business</a>, you can host and review code, manage projects, and build software alongside 50 million developers.</p>
+                    <h1 class="hero-title ff-inter">Empowering Students to Succeed</h1>
+                    <p class="hero-description">Student Help offers personalized tutoring and extra classes for learners from grade one to university. Unlock your potential with our expert tutors in math, science, languages, and more.</p>
                 </div>
             </div>
-
             <div class="hero-form">
-                <div class="sign-up-form">
+                <form class="sign-up-form" action="https://formspree.io/f/{your-form-id}" method="POST">
                     <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password">
+                        <label for="grade">Grade Level</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select Grade</option>
+                            <option value="primary">Grade 1-6</option>
+                            <option value="highschool">Grade 7-12</option>
+                            <option value="university">University</option>
+                        </select>
                     </div>
-                    <p class="form-description">Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.
-                        <a href="#">Learn more.</a>
-                    </p>
-                    <a href="#" class="btn-sign-up">Sign up for Github</a>
-                    <p class="footer-description">By clicking “Sign up for GitHub”, you agree to our <a href="#">Terms of Service</a> and
-                        <a href="#">Privacy Statement</a>. We’ll occasionally send you account related emails.
-                    </p>
-                </div>
+                    <input type="hidden" name="_subject" value="New Consultation Request - Student Help">
+                    <input type="hidden" name="_next" value="#thank-you">
+                    <button type="submit" class="btn-sign-up">Request a Free Consultation</button>
+                    <p class="footer-description">By submitting, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                </form>
             </div>
         </div>
     </div>
 </section>
 
 <main>
-
-    <section class="github-enterpise">
+    <section id="about" class="about">
         <div class="container">
-            <div class="enterprise-content">
-                <img src="https://github.githubassets.com/images/modules/site/home/space.svg" class="enterprise-head-img" alt="">
-                <div class="enterprise-title">
-                    <h2 class="ff-inter">Get started with GitHub Enterprise</h2>
-                    <p>Take collaboration to the next level with security and administrative features built for teams.</p>
+            <div class="section-head">
+                <h2 class="section-title ff-inter">About Student Help</h2>
+                <p class="section-description ff-inter">Our mission is to provide high-quality, accessible tutoring to students of all ages, helping them achieve academic success and build confidence.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-item">
+                    <h3 class="ff-inter">Expert Tutors</h3>
+                    <p>Our team consists of qualified educators with experience in teaching students from primary school to university level.</p>
                 </div>
-                <div class="enterprise-items">
-                    <div class="enterprise-item">
-                        <img src="https://github.githubassets.com/images/modules/orgs/enterprise.svg" alt="">
-                        <h3 class="ff-inter">Enterprise</h3>
-                        <p>Deploy to your environment or the cloud.</p>
-                        <a href="#" class="btn btn-free-trial">Start a free trial</a>
+                <div class="about-item">
+                    <h3 class="ff-inter">Personalized Learning</h3>
+                    <p>We tailor our lessons to each student’s needs, ensuring they grasp concepts and excel in their studies.</p>
+                </div>
+                <div class="about-item">
+                    <h3 class="ff-inter">Flexible Scheduling</h3>
+                    <p>Choose in-person or online sessions at times that suit your busy schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title ff-inter">Our Tutoring Services</h2>
+                <p class="section-description ff-inter">We offer comprehensive tutoring programs for students at every stage of their academic journey.</p>
+            </div>
+            <div class="services-content">
+                <div id="primary" class="service-item">
+                    <h3 class="ff-inter">Primary School (Grades 1-6)</h3>
+                    <p>Build a strong foundation with tutoring in math, reading, writing, and science for young learners aged 6-12.</p>
+                    <a href="#" class="btn btn-outline-blue learn-more" data-target="#primary-details">Learn More</a>
+                    <div id="primary-details" class="service-details">
+                        <p>Our Primary School program includes one-on-one sessions to address individual learning gaps, interactive group activities, and homework support. Subjects covered include basic arithmetic, phonics, creative writing, and introductory science experiments. Sessions are designed to boost confidence and prepare students for higher grades.</p>
+                        <ul>
+                            <li>Duration: 1-hour sessions, 2-3 times per week</li>
+                            <li>Special Features: Interactive online tools and printable worksheets</li>
+                        </ul>
                     </div>
-                    <div class="enterprise-item">
-                        <img src="https://github.githubassets.com/images/modules/site/icons/support.svg" alt="">
-                        <h3>Talk to us</h3>
-                        <p>Need help?</p>
-                        <a href="#" class="btn-outline-blue btn btn-contact-sales">
-                            <span>Contact Sales</span>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </a>
+                </div>
+                <div id="highschool" class="service-item">
+                    <h3 class="ff-inter">High School (Grades 7-12)</h3>
+                    <p>Excel in subjects like algebra, biology, chemistry, and English with our targeted high school tutoring programs.</p>
+                    <a href="#" class="btn btn-outline-blue learn-more" data-target="#highschool-details">Learn More</a>
+                    <div id="highschool-details" class="service-details">
+                        <p>Our High School program offers advanced tutoring to help students master challenging curricula, prepare for exams (e.g., SAT, GCSE), and develop study skills. We provide subject-specific support with certified tutors specializing in STEM and humanities. Additionally, we offer a special service during school vacations and breaks to fill learning gaps, ensuring students return refreshed and improved.</p>
+                        <ul>
+                            <li>Duration: 1.5-hour sessions, 2-4 times per week</li>
+                            <li>Special Features: Exam preparation workshops, personalized study plans, and vacation gap-filling sessions</li>
+                        </ul>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="github-for-teams">
-        <div class="container">
-            <div class="for-teams-content">
-                <div class="warning">
-                    <div class="new-warning">NEW</div>
-                </div>
-                <div class="description">
-                    <h2>GitHub is now free for teams</h2>
-                    <p>GitHub Free gives teams private repositories with unlimited collaborators at no cost. GitHub Team is now reduced to $4 per user/month.                </p>
-                </div>
-                <div class="try-github-free">
-                    <a href="#" class="btn-try-github-free ff-inter">Try Github Free</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="organizations">
-        <div class="container">
-            <div class="organizations-content">
-                <h3 class="organizations-title ff-inter">More than 2.9 million businesses and organizations use GitHub</h3>
-                <ul class="organizations-list">
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/airbnb-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/sap-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/ibm-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/google-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/paypal-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/bloomberg-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/spotify-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/swift-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/facebook-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/node-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/nasa-logo.png" class="organization-logo" alt="">
-                    </li>
-                    <li class="organization-item">
-                        <img src="https://github.githubassets.com/images/modules/site/logos/walmart-logo.png" class="organization-logo" alt="">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="github-teams-signup">
-        <div class="container">
-            <div class="teams-content">
-                <div class="section-head">
-                    <p class="sm-description ff-mono">GitHub for teams  </p>
-                    <h1 class="section-title ff-inter">A better way to work together</h1>
-                    <p class="section-description ff-inter">GitHub brings teams together to work through problems, move ideas forward, and learn from each other along the way.</p>
-                    <div class="btn-wrap">
-                        <a class="btn-outline-blue btn-teams-sign-up">
-                            Sign up your team  <i class="fas fa-long-arrow-alt-right"></i>
-                        </a>
+                <div id="university" class="service-item">
+                    <h3 class="ff-inter">University</h3>
+                    <p>Get support for advanced courses, including calculus, physics, literature, and more, tailored to university students.</p>
+                    <a href="#" class="btn btn-outline-blue learn-more" data-target="#university-details">Learn More</a>
+                    <div id="university-details" class="service-details">
+                        <p>Our University program supports students with complex coursework, thesis preparation, and exam revision. Tutors are subject matter experts with advanced degrees, offering customized lessons to meet academic and career goals.</p>
+                        <ul>
+                            <li>Duration: 2-hour sessions, 1-3 times per week</li>
+                            <li>Special Features: One-on-one thesis guidance and career advice</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features">
+    <section class="testimonials">
         <div class="container">
-            <div class="features-content">
-                <div class="features-head-img">
-                    <img src="https://github.githubassets.com/images/modules/site/home/team.svg" alt="">
-                    <div class="features-item-img">
-                        <img src="https://github.githubassets.com/images/modules/site/home/team-code.svg" alt="" >
-                        <img src="https://github.githubassets.com/images/modules/site/home/team-chaos.svg" alt="" >
-                        <img src="https://github.githubassets.com/images/modules/site/home/team-tools.svg" alt="">
-                    </div>
+            <div class="section-head">
+                <h2 class="section-title ff-inter">What Our Students Say</h2>
+                <p class="section-description ff-inter">Hear from students and parents who have benefited from our tutoring programs.</p>
+            </div>
+            <div class="testimonials-content">
+                <div class="testimonial-card">
+                    <p>“Student Help transformed my daughter’s math skills. She went from struggling to acing her exams!”</p>
+                    <h4>– Sarah M., Parent</h4>
                 </div>
-                <div class="features">
-                        <a class="features-item" data-id="0">
-                                <div class="text">
-                                    <h3 class="features-item-title ff-inter">Write better code</h3>
-                                    <p class="features-item-description">Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build.
-                                        <span class="desc-link">Learn about code review.</span></p>
-                                </div>
-                                <div class="arrow-right-icon">
-                                    <i class="fas fa-caret-right"></i>
-                                </div>
-                        </a>
-                        <a class="features-item" data-id="1">
-                            <div class="text">
-                                <h3 class="features-item-title ff-inter">Manage your chaos</h3>
-                                <p class="features-item-description">Take a deep breath. On GitHub, project management happens in issues and project boards, right alongside your code. All you have to do is mention a teammate to get them involved.
-                                    <span class="desc-link">Learn about project management.</span></p>
-                            </div>
-                            <div class="arrow-right-icon">
-                                <i class="fas fa-caret-right"></i>
-                            </div>
-                        </a>
-                        <a class="features-item" data-id="2">
-                            <div class="text">
-                                <h3 class="features-item-title ff-inter">Find the right tools</h3>
-                                <p class="features-item-description">Browse and buy apps from GitHub Marketplace with your GitHub account. Find the tools you like or discover new favorites—then start using them in minutes.
-                                    <span class="desc-link">Learn about integrations.</span></p>
-                            </div>
-                            <div class="arrow-right-icon">
-                                <i class="fas fa-caret-right"></i>
-                            </div>
-                        </a>
+                <div class="testimonial-card">
+                    <p>“The university-level tutoring helped me understand complex physics concepts. Highly recommend!”</p>
+                    <h4>– James K., University Student</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>“My son loves his reading sessions. The tutors make learning fun and engaging.”</p>
+                    <h4>– Emily R., Parent</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="leading-companies">
+    <section id="contact" class="contact">
         <div class="container">
-            <h3 class="section-title ff-inter">See how the world's leading companies use GitHub Enterprise.</h3>
-            <div class="cards">
-                <a href="#" class="card">
-                    <div class="card-header">
-                        <div class="card-link-effect">
-                            <div class="square">
-                                <i class="fas fa-long-arrow-alt-up"></i>
-                            </div>
-                        </div>
-                        <img src="https://customer-stories-feed.github.com/customer_stories/mgm-resorts/hero.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h1>MGM Resorts International</h1>
-                        <p>Hospitality</p>
-                    </div>
-                    <div class="card-footer">
-                        <span>Read More</span>
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card">
-                    <div class="card-header">
-                        <div class="card-link-effect">
-                            <div class="square">
-                                <i class="fas fa-long-arrow-alt-up"></i>
-                            </div>
-                        </div>
-                        <img src="https://customer-stories-feed.github.com/customer_stories/nationwide/nw_hero.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h1>Nationwide</h1>
-                        <p>Insurance</p>
-                    </div>
-                    <div class="card-footer">
-                        <span>Read More</span>
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card">
-                    <div class="card-header">
-                        <div class="card-link-effect">
-                            <div class="square">
-                                <i class="fas fa-long-arrow-alt-up"></i>
-                            </div>
-                        </div>
-                        <img src="https://customer-stories-feed.github.com/customer_stories/sap/sap6.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h1>SAP</h1>
-                        <p>Business Software</p>
-                    </div>
-                    <div class="card-footer">
-                        <span>Read More</span>
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card">
-                    <div class="card-header">
-                        <div class="card-link-effect">
-                            <div class="square">
-                                <i class="fas fa-long-arrow-alt-up"></i>
-                            </div>
-                        </div>
-                        <img src="https://customer-stories-feed.github.com/customer_stories/spotify/spotifyhero.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h1 class="ff-inter">Spotify</h1>
-                        <p>Technology / Streaming</p>
-                    </div>
-                    <div class="card-footer">
-                        <span>Read More</span>
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                    </div>
-                </a>
+            <div class="section-head">
+                <h2 class="section-title ff-inter">Get in Touch</h2>
+                <p class="section-description ff-inter">Contact us to learn more about our tutoring programs or to schedule a free consultation.</p>
             </div>
-        </div>
-    </section>
-
-    <section class="administration">
-        <div class="container">
-            <div class="administration-content">
-                <div class="administration-header">
-                    <div class="section-head">
-                        <p class="sm-description ff-mono">Security and administration
-                        </p>
-                        <h1 class="section-title ff-inter">Your business needs, met
-                        </h1>
-                        <p class="section-description ff-inter">From flexible hosting to granular access controls, we’ve got your security requirements covered.
-                        </p>
-                        <div class="btn-wrap">
-                            <a class="btn-outline-blue btn-teams-sign-up">
-                                Learn how GitHub Enterprise works    <i class="fas fa-long-arrow-alt-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="administration-body">
-                    <div class="administration-items">
-                        <div class="administration-item">
-                            <h3 class="administration-title ff-inter">Code security</h3>
-                            <p class="administration-desc">Prevent problems before they happen. Protected branches, signed commits, and required status checks protect your work and help you maintain a high standard for your code.</p>
-                        </div>
-                        <div class="administration-item">
-                            <h3 class="administration-title ff-inter">Access controlled</h3>
-                            <p class="administration-desc">Encourage teams to work together while limiting access to those who need it with granular permissions and authentication through SAML/SSO and LDAP.</p>
-                        </div>
-                    </div>
-                    <div class="administration-body-img">
-                        <img src="https://github.githubassets.com/images/modules/site/home/business.png" alt="">
-                    </div>
-                </div>
-                <div class="administration-footer">
-                    <div class="administration-card">
-                        <div class="administration-card-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <div class="administration-card-desc">
-                            <h3 class="ff-inter">Hosted where you need it</h3>
-                            <p>Securely and reliably host your work on GitHub using GitHub Enterprise Cloud. Or deploy GitHub Enterprise Server in your own data centers or in a private cloud using Amazon Web Services, Azure, or Google Cloud Platform.</p>
-                            <a href="#">Compare plans <i class="fas fa-long-arrow-alt-right"></i></a>
-                            <a href="#">Contact Sales for more information <i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="integrations">
-        <div class="container">
-            <div class="integrations-content">
-                <div class="integration-header">
-                    <div class="section-head">
-                        <p class="sm-description ff-mono">Integrations </p>
-                        <h1 class="section-title ff-inter">Build on GitHub</h1>
-                        <p class="section-description ff-inter">Customize your process with GitHub apps and an intuitive API. Integrate the tools you already use or discover new favorites to create a happier, more efficient way of working.
-                        </p>
-                        <div class="btn-wrap">
-                            <a class="btn-outline-blue btn-teams-sign-up">
-                                Learn about integrations  <i class="fas fa-long-arrow-alt-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="integration-body">
-                    <div class="integration-list">
-                        <div class="integration-item slack" aria-label="Slack">
-                            <img src="https://github.githubassets.com/images/modules/site/integrators/slackhq.png" alt="" class="integration-logo">
-                        </div>
-                        <div class="integration-item zenhub" aria-label="Zenhub">
-                            <img src="https://github.githubassets.com/images/modules/site/integrators/zenhubio.png" alt="" class="integration-logo">
-                        </div>
-                        <div class="integration-item travis-ci" aria-label="Travis CI">
-                            <img src="https://github.githubassets.com/images/modules/site/integrators/travis-ci.png" alt="" class="integration-logo">
-                        </div>
-                        <div class="integration-item atom" aria-label="Atom">
-                            <img src="https://github.githubassets.com/images/modules/site/integrators/atom.png" alt="" class="integration-logo">
-                        </div>
-                        <div class="integration-item circle-ci" aria-label="Circle CI">
-                            <img src="https://github.githubassets.com/images/modules/site/integrators/circleci.png" alt="" class="integration-logo">
-                        </div>
-                        <div class="integration-item google" aria-label="Google">
-                            <img src="https://github.githubassets.com/images/modules/site/integrators/google.png" alt="" class="integration-logo">
-                        </div>
-                        <div class="integration-item code-climate" aria-label="Code Climate">
-                            <img src="https://github.githubassets.com/images/modules/site/integrators/codeclimate.png" alt="" class="integration-logo">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="integration-footer">
-                    <p>Sometimes, there’s more than one tool for the job. Why not try something new?</p>
-                    <a href="#">Browse GitHub Marketplace <i class="fas fa-long-arrow-alt-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="community">
-        <div class="container">
-            <div class="community-content">
-                <div class="community-header">
-                    <div class="section-head">
-                        <p class="sm-description ff-mono">Community </p>
-                        <h1 class="section-title ff-inter">Welcome home,<br>developers</h1>
-                        <p class="section-description ff-inter">GitHub is home to the world’s largest community of developers and their projects...</p>
-                    </div>
-                </div>
-                <div class="community-body">
-                    <div class="cards">
-                        <a href="#" class="card">
-                            <div class="card-header">
-                                <div class="card-link-effect">
-                                    <div class="square">
-                                        <i class="fas fa-long-arrow-alt-up"></i>
-                                    </div>
-                                </div>
-                                <img src="https://customer-stories-feed.github.com/customer_stories/freakboy3742/hero.jpg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h1>Russell Keith-Magee</h1>
-                                <p>
-          Russell Keith-Magee created BeeWare to fill a gap in his own process. Today, BeeWare is the go-to project for supporting Python on every platform.
-      </p>
-                            </div>
-                            <div class="card-footer">
-                                <span>Read More</span>
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </a>
-
-                        <a href="#" class="card">
-                            <div class="card-header">
-                                <div class="card-link-effect">
-                                    <div class="square">
-                                        <i class="fas fa-long-arrow-alt-up"></i>
-                                    </div>
-                                </div>
-                                <img src="https://customer-stories-feed.github.com/customer_stories/kris-nova/hero.jpg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h1>Kris Nova</h1>
-                                <p>
-          Kris Nova quickly developed a passion for open source software. Now she gets to work on open source tooling at her day job, which includes maintaining Kubernetes Operations (kops).
-      </p>
-                            </div>
-                            <div class="card-footer">
-                                <span>Read More</span>
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </a>
-
-                        <a href="#" class="card">
-                            <div class="card-header">
-                                <div class="card-link-effect">
-                                    <div class="square">
-                                        <i class="fas fa-long-arrow-alt-up"></i>
-                                    </div>
-                                </div>
-                                <img src="https://customer-stories-feed.github.com/customer_stories/yyx990803/hero.jpg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h1>Evan You</h1>
-                                <p>
-          In 2013, Evan You founded Vue, a Javascript framework funded by the community on Patreon. In 2016, Vue reached 2,000,000 downloads.
-      </p>
-                            </div>
-                            <div class="card-footer">
-                                <span>Read More</span>
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </a>
-
-                        <a href="#" class="card">
-                            <div class="card-header">
-                                <div class="card-link-effect">
-                                    <div class="square">
-                                        <i class="fas fa-long-arrow-alt-up"></i>
-                                    </div>
-                                </div>
-                                <img src="https://customer-stories-feed.github.com/customer_stories/jessfraz/hero.jpg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h1 class="ff-inter">Jess Frazelle</h1>
-                                <p>
-          Jess Frazelle works on Kubernetes full-time. Previously she maintained Docker, a software containerization platform used by thousands of teams.
-      </p>
-                            </div>
-                            <div class="card-footer">
-                                <span>Read More</span>
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="community-footer">
-                    <p class="section-description ff-inter">...whether you’re making your first commit or sending a Rover to Mars, there’s room for you here, too.
-                    </p>
-
-                    <div class="statistics">
-                        <a href="#" class="statistic repositories">
-                            <div class="statistics-number">
-                                <span class="number ff-inter">100M<sup>*</sup></span>
-                                <span class="text">repositories worldwide</span>
-                            </div>
-                            <div class="features-item">
-                                <div class="text">
-                                    <p class="features-item-description">GitHub’s users create and maintain influential technologies alongside the world’s largest
-                                        <span class="sp-repositories">open source community</span></p>
-                                </div>
-                                <div class="arrow-right-icon">
-                                    <i class="fas fa-caret-right"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="statistic developers">
-                            <div class="statistics-number">
-                                <span class="number ff-inter">50M<sup>*</sup></span>
-                                <span class="text">developers <br> worldwide</span>
-                            </div>
-                            <div class="features-item">
-                                <div class="text">
-                                    <p class="features-item-description"> <span class="sp-developers">Developers </span> use GitHub for personal projects, from experimenting with new programming languages to hosting their life’s work.</p></div>
-                                <div class="arrow-right-icon">
-                                    <i class="fas fa-caret-right"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="statistic businesses">
-                            <div class="statistics-number">
-                                <span class="number ff-inter">2.9M<sup>*</sup></span>
-                                <span class="text">businesses & organizations worldwide</span>
-                            </div>
-                            <div class="features-item">
-                                <div class="text">
-                                    <p class="features-item-description">
-                                        <span class="sp-businesses" >Businesses</span>
-                                        of all sizes use GitHub to support their development process and to securely build software.</p>
-                                </div>
-                                <div class="arrow-right-icon">
-                                    <i class="fas fa-caret-right"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="statictics-date">* As of August 2019</div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="signup">
-        <div class="container">
-            <h2 class="signup-title ff-inter">
-                Get started for free — join the millions of developers already using GitHub to share their code, work together, and build amazing things.
-            </h2>
-            <div class="signup-form">
+            <div class="contact-form">
                 <div class="form-group">
-                    <label for="username2">Username</label>
-                    <input type="text" id="username2" placeholder="Pick a username">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" placeholder="Your name">
                 </div>
                 <div class="form-group">
-                    <label for="email2">Email</label>
-                    <input type="email" id="email2" placeholder="Your email address">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" placeholder="Your email address">
                 </div>
                 <div class="form-group">
-                    <label for="password-2">Password</label>
-                    <input type="password" id="password-2" placeholder="Create a password">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message"></textarea>
                 </div>
-                <a href="#" class="btn-sign-up">Sign up for Github</a>
+                <a href="#" class="btn-sign-up">Send Message</a>
             </div>
-            <p class="footer-description">By clicking “Sign up for GitHub”, you agree to our <a href="#">terms of service</a> and
-                <a href="#">privacy statement</a>. We’ll occasionally send you account related emails.
-            </p>
         </div>
     </section>
 </main>
@@ -785,107 +237,34 @@
     <div class="container">
         <div class="footer-body">
             <div class="footer-logo">
-                <svg height="30" viewBox="0 0 45 16" version="1.1" width="84" ><path fill-rule="evenodd" d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 00-.146-.18zM42.23 9.84c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61h-2.1c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z"></path></svg>
+                <a href="#"><img src="src/assets/images/student-help-logo.png" alt="Student Help Logo" class="logo-img"></a>
             </div>
             <div class="footer-nav">
                 <div class="footer-col">
-                        <h2 class="title ff-mono">Product</h2>
-                        <ul class="footer-links">
-                            <li class="footer-nav-item">
-                                <a href="#" class="footer-link">Features</a>
-                            </li>
-                            <li class="footer-nav-item">
-                                <a href="#" class="footer-link">Security</a>
-                            </li>
-                            <li class="footer-nav-item">
-                                <a href="#" class="footer-link">Team</a>
-                            </li>
-                            <li class="footer-nav-item">
-                                <a href="#" class="footer-link">Enterprise</a>
-                            </li>
-                            <li class="footer-nav-item">
-                                <a href="#" class="footer-link">Customer stories</a>
-                            </li>
-                            <li class="footer-nav-item">
-                                <a href="#" class="footer-link">The ReadME Project</a>
-                            </li>
-                            <li class="footer-nav-item">
-                                <a href="#" class="footer-link">Pricing</a>
-                            </li>
-                            <li class="footer-nav-item">
-                                <a href="#" class="footer-link">Resources</a>
-                            </li>
-                            <li class="footer-nav-item">
-                                <a href="#" class="footer-link">Roadmap</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                <div class="footer-col">
-                    <h2 class="title ff-mono">Platform</h2>
+                    <h2 class="title ff-mono">Quick Links</h2>
                     <ul class="footer-links">
                         <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Developer API</a>
+                            <a href="#" class="footer-link">Home</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Partners</a>
+                            <a href="#about" class="footer-link">About</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Atom</a>
+                            <a href="#services" class="footer-link">Services</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Electron</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">GitHub Desktop</a>
+                            <a href="#contact" class="footer-link">Contact</a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
-                    <h2 class="title ff-mono">Support</h2>
+                    <h2 class="title ff-mono">Contact Us</h2>
                     <ul class="footer-links">
                         <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Help</a>
+                            <a href="mailto:info@studenthelp.com" class="footer-link">info@studenthelp.cloud</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Community Forum</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Professional Services</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Learning Lab</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Status</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Contact GitHub</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h2 class="title ff-mono">Company</h2>
-                    <ul class="footer-links">
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">About</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Blog</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Careers</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Press</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Social Impact</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-link">Shop</a>
+                            <a href="tel:+1234567890" class="footer-link">+233 (059) 6788173/ (050) 0121277</a>
                         </li>
                     </ul>
                 </div>
@@ -896,7 +275,7 @@
         <div class="container">
             <ul class="another-links">
                 <li class="nav-item">
-                    <span class="copyright">© 2020 GitHub, Inc</span>
+                    <span class="copyright">© 2025 Student Help</span>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Terms</a>
@@ -904,49 +283,22 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">Privacy</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Site Map</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">What is Git?</a>
-                </li>
             </ul>
             <div class="social-media">
                 <div class="social-item">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                 </div>
                 <div class="social-item">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
                 </div>
                 <div class="social-item">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="#" class="social-link">
-                        <i class="fab fab fa-github"></i>
-                    </a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
-</body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+<script src="src/assets/js/main.js"></script>
 </body>
 </html>
