@@ -35,4 +35,26 @@ document.addEventListener('DOMContentLoaded', () => {
             otherCourseInput.removeAttribute('required');
         }
     });
+
+    // Popup (Modal) functionality
+    const enrollBtn = document.querySelector('.enroll-btn');
+    const modal = document.getElementById('enroll-modal');
+    const modalClose = document.querySelector('.modal-close');
+
+    // Open modal when "Enroll Now" button is clicked
+    enrollBtn.addEventListener('click', () => {
+        modal.classList.add('active');
+    });
+
+    // Close modal when close button is clicked
+    modalClose.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
+    // Close modal when clicking outside the modal content
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
 });
