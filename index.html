@@ -87,91 +87,98 @@
                 <div class="hero-text">
                     <h1 class="hero-title ff-inter">Empowering Students to Succeed</h1>
                     <p class="hero-description">Student Help offers personalized tutoring and extra classes for learners from grade one to university. Unlock your potential with our expert tutors in math, science, languages, and more.</p>
+                    <button class="btn btn-register enroll-btn">Enroll Now</button>
                 </div>
             </div>
-            <div class="hero-form">
-                <form class="sign-up-form" action="https://formspree.io/f/{your-form-id}" method="POST" id="enrollment-form">
-                    <div class="form-group">
-                        <label for="student-name">Full Name of Student</label>
-                        <input type="text" id="student-name" name="student-name" placeholder="Student's full name" required>
+        </div>
+    </div>
+
+    <!-- Popup Form -->
+    <div class="modal" id="enroll-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title ff-inter">Enroll Now</h2>
+            <form class="sign-up-form" action="https://formspree.io/f/{your-form-id}" method="POST" id="enrollment-form">
+                <div class="form-group">
+                    <label for="student-name">Full Name of Student</label>
+                    <input type="text" id="student-name" name="student-name" placeholder="Student's full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="parent-name">Full Name of Parent</label>
+                    <input type="text" id="parent-name" name="parent-name" placeholder="Parent's full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Student/Parent Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Student Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="age">Student Age</label>
+                    <input type="number" id="age" name="age" placeholder="Student's age" min="5" max="25" required>
+                </div>
+                <div class="form-group">
+                    <label for="grade">Student Current Grade</label>
+                    <select id="grade" name="grade" required>
+                        <option value="">Select Grade</option>
+                        <option value="grade1-6">Grade 1-6</option>
+                        <option value="grade7-12">Grade 7-12</option>
+                        <option value="university">University</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="address1">Address Line 1</label>
+                    <input type="text" id="address1" name="address1" placeholder="Street address" required>
+                </div>
+                <div class="form-group">
+                    <label for="address2">Address Line 2</label>
+                    <input type="text" id="address2" name="address2" placeholder="Apartment, suite, etc. (optional)">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="City" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State/Province</label>
+                    <input type="text" id="state" name="state" placeholder="State or province" required>
+                </div>
+                <div class="form-group">
+                    <label for="courses">Please select the courses you wish to enrol for</label>
+                    <select id="courses" name="courses" required>
+                        <option value="">Select a course</option>
+                        <option value="math-grade1-6">Math (Grade 1-6)</option>
+                        <option value="reading-grade1-6">Reading (Grade 1-6)</option>
+                        <option value="science-grade1-6">Science (Grade 1-6)</option>
+                        <option value="math-grade7-12">Math (Grade 7-12)</option>
+                        <option value="biology-grade7-12">Biology (Grade 7-12)</option>
+                        <option value="chemistry-grade7-12">Chemistry (Grade 7-12)</option>
+                        <option value="english-grade7-12">English (Grade 7-12)</option>
+                        <option value="calculus-university">Calculus (University)</option>
+                        <option value="physics-university">Physics (University)</option>
+                        <option value="literature-university">Literature (University)</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div id="other-course" class="form-group" style="display: none;">
+                        <label for="other-course-input">Preferred Course</label>
+                        <input type="text" id="other-course-input" name="other-course" placeholder="Enter preferred course">
                     </div>
-                    <div class="form-group">
-                        <label for="parent-name">Full Name of Parent</label>
-                        <input type="text" id="parent-name" name="parent-name" placeholder="Parent's full name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Student/Parent Email</label>
-                        <input type="email" id="email" name="email" placeholder="Email address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="gender">Student Gender</label>
-                        <select id="gender" name="gender" required>
-                            <option value="">Select Gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="age">Student Age</label>
-                        <input type="number" id="age" name="age" placeholder="Student's age" min="5" max="25" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="grade">Student Current Grade</label>
-                        <select id="grade" name="grade" required>
-                            <option value="">Select Grade</option>
-                            <option value="grade1-6">Grade 1-6</option>
-                            <option value="grade7-12">Grade 7-12</option>
-                            <option value="university">University</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address1">Address Line 1</label>
-                        <input type="text" id="address1" name="address1" placeholder="Street address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address2">Address Line 2</label>
-                        <input type="text" id="address2" name="address2" placeholder="Apartment, suite, etc. (optional)">
-                    </div>
-                    <div class="form-group">
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="city" placeholder="City" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="state">State/Province</label>
-                        <input type="text" id="state" name="state" placeholder="State or province" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="courses">Please select the courses you wish to enrol for</label>
-                        <select id="courses" name="courses" required>
-                            <option value="">Select a course</option>
-                            <option value="math-grade1-6">Math (Grade 1-6)</option>
-                            <option value="reading-grade1-6">Reading (Grade 1-6)</option>
-                            <option value="science-grade1-6">Science (Grade 1-6)</option>
-                            <option value="math-grade7-12">Math (Grade 7-12)</option>
-                            <option value="biology-grade7-12">Biology (Grade 7-12)</option>
-                            <option value="chemistry-grade7-12">Chemistry (Grade 7-12)</option>
-                            <option value="english-grade7-12">English (Grade 7-12)</option>
-                            <option value="calculus-university">Calculus (University)</option>
-                            <option value="physics-university">Physics (University)</option>
-                            <option value="literature-university">Literature (University)</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <div id="other-course" class="form-group" style="display: none;">
-                            <label for="other-course-input">Preferred Course</label>
-                            <input type="text" id="other-course-input" name="other-course" placeholder="Enter preferred course">
-                        </div>
-                    </div>
-                    <input type="hidden" name="_subject" value="New Enrollment Request - Student Help">
-                    <input type="hidden" name="_cc" value="info@studenthelp.cloud">
-                    <button type="submit" class="btn-sign-up">Submit</button>
-                    <p class="footer-description">By submitting, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
-                </form>
-            </div>
+                </div>
+                <input type="hidden" name="_subject" value="New Enrollment Request - Student Help">
+                <input type="hidden" name="_cc" value="info@studenthelp.cloud">
+                <button type="submit" class="btn-sign-up">Submit</button>
+                <p class="footer-description">By submitting, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+            </form>
         </div>
     </div>
 </section>
