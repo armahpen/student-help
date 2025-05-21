@@ -1,210 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Student Help: Personalized Tutoring</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/src/assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Help - Tutoring Services</title>
+  <link rel="stylesheet" href="src/assets/css/main.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="nav-logo">
-                    <a href="#"><img src="/src/assets/images/student-help-logo.png" alt="Student Help Logo" class="logo-img"></a>
-                </div>
-                <div class="nav-menu">
-                    <ul class="nav-links">
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown">
-                                <a href="#primary">Primary School</a>
-                                <a href="#highschool">High School</a>
-                                <a href="#university">University</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                    <a href="#" class="btn btn-primary nav-cta">Get Started</a>
-                </div>
-                <div class="nav-toggle"><i class="fas fa-bars"></i></div>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Empower Your Learning Journey</h1>
-                    <p class="hero-subtitle">Personalized tutoring for all ages, from grade one to university, with expert guidance in math, science, and more.</p>
-                    <button class="btn btn-secondary enroll-btn">Enroll Now</button>
-                </div>
-                <div class="hero-image">
-                    <img src="/src/assets/images/student-studying.jpg" alt="Student Studying">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Popup Form -->
-    <div class="modal" id="enroll-modal">
-        <div class="modal-content">
-            <span class="modal-close">×</span>
-            <h2 class="modal-title">Student Enrollment Form</h2>
-            <form class="enrollment-form" action="https://formspree.io/f/{your-form-id}" method="POST">
-                <div class="form-group">
-                    <label for="student-name">Student Name</label>
-                    <input type="text" id="student-name" name="student-name" placeholder="Enter student's full name" required>
-                </div>
-                <div class="form-group">
-                    <label for="parent-name">Parent Name</label>
-                    <input type="text" id="parent-name" name="parent-name" placeholder="Enter parent's full name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
-                </div>
-                <div class="form-group">
-                    <label for="courses">Select Course</label>
-                    <select id="courses" name="courses" required>
-                        <option value="">Choose a course</option>
-                        <option value="math-grade1-6">Math (Grade 1-6)</option>
-                        <option value="science-grade7-12">Science (Grade 7-12)</option>
-                        <option value="calculus-university">Calculus (University)</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <div id="other-course" class="form-group" style="display: none;">
-                        <label for="other-course-input">Preferred Course</label>
-                        <input type="text" id="other-course-input" name="other-course" placeholder="Enter preferred course">
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="src/assets/images/student-help-logo.png" alt="Student Help Logo" class="logo-img">
     </div>
+    <div class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" class="cta-button" id="openForm">Book a Session</a></li>
+    </ul>
+  </nav>
 
-    <section id="why-student-help" class="why-section">
-        <div class="container">
-            <h2 class="section-title">Why Choose Student Help?</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon">👩‍🏫</div>
-                    <h3 class="card-stat">+90%</h3>
-                    <p class="card-text">Expert Tutors enhance learning with personalized support.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🎓</div>
-                    <h3 class="card-stat">+85%</h3>
-                    <p class="card-text">Personalized plans boost academic success.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">⏰</div>
-                    <h3 class="card-stat">+95%</h3>
-                    <p class="card-text">Flexible scheduling fits your life.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">📈</div>
-                    <h3 class="card-stat">+80%</h3>
-                    <p class="card-text">Improved grades with our programs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Empower Your Learning Journey</h1>
+      <p>Expert tutoring services to help students excel in their studies.</p>
+      <a href="#" class="cta-button" id="openFormHero">Get Started</a>
+    </div>
+  </section>
 
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2 class="section-title">Our Tutoring Services</h2>
-            <div class="services-slider">
-                <div class="service-card" id="primary">
-                    <h3>Primary School</h3>
-                    <p>Foundational tutoring in math, reading, and science for grades 1-6.</p>
-                </div>
-                <div class="service-card" id="highschool">
-                    <h3>High School</h3>
-                    <p>Advanced support in algebra, biology, and English for grades 7-12.</p>
-                </div>
-                <div class="service-card" id="university">
-                    <h3>University</h3>
-                    <p>Expert help with calculus, physics, and literature.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Tutoring Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Math Tutoring</h3>
+        <p>Master algebra, calculus, and more with personalized lessons.</p>
+      </div>
+      <div class="service-card">
+        <h3>Science Tutoring</h3>
+        <p>Explore physics, chemistry, and biology with expert guidance.</p>
+      </div>
+      <div class="service-card">
+        <h3>Language Arts</h3>
+        <p>Improve writing, reading, and communication skills.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="faq" class="faq-section">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-content">
-                <div class="faq-item">
-                    <button class="faq-question">What is Student Help?</button>
-                    <div class="faq-answer">A service offering personalized tutoring for students from grade one to university.</div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">How do I enroll?</button>
-                    <div class="faq-answer">Click 'Enroll Now' to start the process, and we’ll contact you.</div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">What ages do you serve?</button>
-                    <div class="faq-answer">We support students aged 6 to 25, covering all educational levels.</div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Popup Form -->
+  <div class="popup-form" id="popupForm">
+    <div class="form-content">
+      <span class="close-form" id="closeForm">&times;</span>
+      <h2>Book a Tutoring Session</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+          <option value="math">Math</option>
+          <option value="science">Science</option>
+          <option value="language">Language Arts</option>
+        </select>
+        <button type="submit" class="cta-button">Submit</button>
+      </form>
+    </div>
+  </div>
 
-    <section class="cta-section">
-        <div class="container">
-            <h2 class="cta-title">Ready to Succeed?</h2>
-            <button class="btn btn-secondary cta-btn">Book a Session</button>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Student Help. All rights reserved.</p>
+  </footer>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#"><img src="/src/assets/images/student-help-logo.png" alt="Student Help Logo" class="logo-img"></a>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li><a href="mailto:info@studenthelp.cloud">info@studenthelp.cloud</a></li>
-                            <li><a href="tel:+1234567890">+233 (059) 6788173</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col social">
-                        <h4>Follow Us</h4>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 Student Help. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Terms</a> | <a href="#">Privacy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/src/assets/js/main.js"></script>
+  <script src="src/assets/js/main.js"></script>
 </body>
 </html>
