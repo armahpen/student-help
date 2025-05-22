@@ -2,31 +2,31 @@
 const courses = [
     {
         id: 1,
-        title: 'Primary School (Grade 1 – Grade 6)',
-        description: 'Foundational support in core subjects including Mathematics, English, and Science.',
-        level: 'Beginner',
-        duration: 'Ongoing'
+        title: 'Mathematics',
+        description: 'Master fundamental mathematical concepts',
+        level: 'Intermediate',
+        duration: '8 weeks'
     },
     {
         id: 2,
-        title: 'Junior High School (Grade 7 – Grade 10)',
-        description: 'In-depth subject guidance and exam preparation.',
-        level: 'Intermediate',
-        duration: 'Ongoing'
+        title: 'Physics',
+        description: 'Understanding the laws of physics',
+        level: 'Advanced',
+        duration: '10 weeks'
     },
     {
         id: 3,
-        title: 'Senior High School (SHS)',
-        description: 'Special vacation classes focused on Mathematics, English, Science, and one preferred elective subject of your choice.',
-        level: 'Advanced',
-        duration: 'Vacation Period'
+        title: 'Chemistry',
+        description: 'Explore chemical reactions and compounds',
+        level: 'Beginner',
+        duration: '12 weeks'
     },
     {
         id: 4,
-        title: 'University (All Levels)',
-        description: 'Tailored academic support across various disciplines to meet the needs of university students.',
-        level: 'Advanced',
-        duration: 'Ongoing'
+        title: 'Biology',
+        description: 'Study of life and living organisms',
+        level: 'Intermediate',
+        duration: '10 weeks'
     }
 ];
 
@@ -54,66 +54,20 @@ function populateCourses() {
 function enrollCourse(courseId) {
     const course = courses.find(c => c.id === courseId);
     if (course) {
-        const popupForm = document.getElementById('popupForm');
-        popupForm.style.display = 'flex';
+        alert(`Successfully enrolled in ${course.title}! We'll contact you with further details.`);
     }
 }
 
+// Handle contact form submission
 document.addEventListener('DOMContentLoaded', () => {
-    // Navigation and Popup Form
-    const openForm = document.getElementById('openForm');
-    const openFormHero = document.getElementById('openFormHero');
-    const openFormAbout = document.getElementById('openFormAbout');
-    const closeForm = document.getElementById('closeForm');
-    const popupForm = document.getElementById('popupForm');
-    const faqItems = document.querySelectorAll('.faq-item h4');
-
-    openForm.addEventListener('click', (e) => {
-        e.preventDefault();
-        popupForm.style.display = 'flex';
-    });
-
-    openFormHero.addEventListener('click', (e) => {
-        e.preventDefault();
-        popupForm.style.display = 'flex';
-    });
-
-    openFormAbout.addEventListener('click', (e) => {
-        e.preventDefault();
-        popupForm.style.display = 'flex';
-    });
-
-    closeForm.addEventListener('click', () => {
-        popupForm.style.display = 'none';
-    });
-
-    popupForm.addEventListener('click', (e) => {
-        if (e.target === popupForm) {
-            popupForm.style.display = 'none';
-        }
-    });
-
-    // Booking form submission
-    document.getElementById('bookingForm').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you! Your request has been submitted. We will contact you soon.');
-        popupForm.style.display = 'none';
-    });
-
-    // FAQ toggle
-    faqItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const parent = item.parentElement;
-            parent.classList.toggle('active');
-        });
-    });
-
-    // Contact form submission
     const contactForm = document.getElementById('contactForm');
+    
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const formData = new FormData(contactForm);
+            
+            // In a real application, you would send this data to a server
             alert('Thank you for your message! We will get back to you soon.');
             contactForm.reset();
         });
