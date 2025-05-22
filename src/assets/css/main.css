@@ -6,11 +6,11 @@
 }
 
 :root {
-    --primary-color: #00c4cc;
-    --secondary-color: #ff6b81;
-    --accent-color: #a100a1;
+    --primary-color: #4a90e2;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
     --text-color: #333;
-    --light-bg: #e6f0fa;
+    --light-bg: #f5f6fa;
     --white: #ffffff;
 }
 
@@ -30,11 +30,6 @@ body {
     z-index: 1000;
 }
 
-.header.scrolled {
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
 .nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -44,8 +39,10 @@ body {
     align-items: center;
 }
 
-.logo-img {
-    height: 40px;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -54,13 +51,9 @@ body {
     gap: 2rem;
 }
 
-.nav-links li {
-    margin-left: 20px;
-}
-
 .nav-links a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -78,7 +71,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -91,36 +84,22 @@ body {
 .cta-button {
     padding: 1rem 2rem;
     font-size: 1.1rem;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: var(--white);
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
-    background-color: var(--secondary-color);
 }
 
 /* Courses Section */
 .courses {
     padding: 4rem 2rem;
     background-color: var(--light-bg);
-    text-align: center;
-}
-
-.courses h2 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    color: var(--text-color);
-}
-
-.courses p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: #666;
 }
 
 .course-grid {
@@ -133,7 +112,7 @@ body {
 
 .course-card {
     background: var(--white);
-    border-radius: 12px;
+    border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -143,35 +122,9 @@ body {
     transform: translateY(-5px);
 }
 
-.course-card h3 {
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.course-card p {
-    font-size: 1.1rem;
-    color: #666;
-}
-
-.course-meta {
-    margin: 1rem 0;
-    font-size: 0.9rem;
-    color: #666;
-    display: flex;
-    justify-content: space-between;
-}
-
 /* Resources Section */
 .resources {
     padding: 4rem 2rem;
-    text-align: center;
-}
-
-.resources h2 {
-    font-size: 2.8rem;
-    margin-bottom: 50px;
-    color: var(--text-color);
 }
 
 .resources-grid {
@@ -185,156 +138,14 @@ body {
 .resource-card {
     background: var(--light-bg);
     padding: 2rem;
-    border-radius: 12px;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.resource-card:hover {
-    transform: translateY(-5px);
-}
-
-.resource-card h3 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-/* About Section */
-.about {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: var(--light-bg);
-}
-
-.about h2 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    color: var(--text-color);
-}
-
-.about h3 {
-    font-size: 1.8rem;
-    margin: 30px 0 15px;
-    color: var(--primary-color);
-}
-
-.about p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #666;
-}
-
-.specialties, .why-choose {
-    list-style: none;
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto 30px;
-}
-
-.specialties li, .why-choose li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.specialties li:before, .why-choose li:before {
-    content: "✔";
-    color: var(--primary-color);
-    position: absolute;
-    left: 0;
-}
-
-.faq {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.faq-item {
-    margin-bottom: 20px;
-    background-color: var(--white);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.faq-item h4 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.faq-item p {
-    font-size: 1.1rem;
-    color: #666;
-    display: none;
-}
-
-.faq-item.active p {
-    display: block;
-}
-
-/* Testimonials Section */
-.testimonials {
-    padding: 4rem 2rem;
-    text-align: center;
-    background: linear-gradient(135deg, #ffd700, #ffaa00);
-}
-
-.testimonials h2 {
-    font-size: 2.8rem;
-    margin-bottom: 50px;
-    color: var(--white);
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.testimonial-card {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.testimonial-card .icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    display: block;
-}
-
-.testimonial-card h3 {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin: 10px 0;
-}
-
-.testimonial-card p {
-    font-size: 1rem;
-    color: var(--text-color);
 }
 
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
     background-color: var(--light-bg);
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
-    color: var(--text-color);
 }
 
 .contact-form {
@@ -372,75 +183,13 @@ body {
     background-color: var(--secondary-color);
 }
 
-/* Popup Form */
-.popup-form {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    align-items: center;
-    justify-content: center;
-    z-index: 2000;
-}
-
-.form-content {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 550px;
-    position: relative;
-}
-
-.close-form {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: var(--secondary-color);
-}
-
-form label {
-    margin: 15px 0 8px;
-    font-weight: 600;
-    color: var(--text-color);
-}
-
-form label span {
-    color: var(--secondary-color);
-}
-
-form input, form select {
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-}
-
 /* Footer */
 .footer {
-    background-color: #333;
+    background-color: var(--secondary-color);
     color: var(--white);
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
-}
-
-/* Animations */
-.fade-out {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.fade-in {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Responsive Design */
@@ -456,23 +205,11 @@ form input, form select {
         gap: 1rem;
     }
 
-    .nav-links li {
-        margin-left: 0;
-    }
-
     .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    .courses h2, .resources h2, .about h2, .testimonials h2, .contact h2 {
         font-size: 2rem;
     }
 
-    .faq-item h4 {
-        font-size: 1.3rem;
+    .hero p {
+        font-size: 1rem;
     }
 }
