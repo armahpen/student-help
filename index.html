@@ -1,85 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Help - Tutoring Services</title>
-  <link rel="stylesheet" href="src/assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Help</title>
+    <link rel="stylesheet" href="src/assets/css/main.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="src/assets/images/student-help-logo.png" alt="Student Help Logo" class="logo-img">
-    </div>
-    <div class="nav-toggle" id="navToggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#" class="cta-button" id="openForm">Book a Session</a></li>
-    </ul>
-  </nav>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="src/assets/images/student-help-logo.png" alt="Student Help Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="cta-button" id="openForm">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Empower Your Learning Journey</h1>
-      <p>Expert tutoring services to help students excel in their studies.</p>
-      <a href="#" class="cta-button" id="openFormHero">Get Started</a>
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to Student Help</h1>
+            <p>Your one-stop platform for academic success</p>
+            <button class="cta-button" id="openFormHero">Book Now</button>
+        </section>
+
+        <section id="courses" class="courses">
+            <h2>Our Comprehensive Tutoring Services</h2>
+            <p>We offer personalized tutoring for learners across all academic levels:</p>
+            <div class="course-grid" id="courseGrid">
+                <!-- Courses will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="resources" class="resources">
+            <h2>Learning Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Study Materials</h3>
+                    <p>Access comprehensive study materials for all subjects.</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Practice Tests</h3>
+                    <p>Test your knowledge with curated practice exams.</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Tutorials</h3>
+                    <p>Watch video tutorials to reinforce your learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Student Help</h2>
+            <p>Student Help is an educational service dedicated to connecting students with skilled, passionate, and result-driven tutors. Our mission is clear: to support, enhance, and transform student learning at every level — from foundational education to advanced university study.</p>
+            <p>We understand that every learner is unique, and we celebrate that by offering tutoring that is flexible, tailored, and responsive to each student’s strengths, weaknesses, and learning style. Whether your child is struggling, aiming to stay ahead, or preparing for major exams, Student Help provides the structure, mentorship, and motivation they need to succeed.</p>
+            <p>Our vision is to build a generation of confident, competent, and independent learners by making academic support accessible, engaging, and impactful.</p>
+            <h3>We specialize in:</h3>
+            <ul class="specialties">
+                <li>Building strong academic foundations in early learners from Grade 1 to Grade 6, focusing on essential skills in Mathematics, English, and Science.</li>
+                <li>Reinforcing subject mastery for students in Grade 7 to Grade 10 with a goal of preparing them for final exams and helping them transition confidently to higher levels.</li>
+                <li>SHS Vacation Classes designed for senior high students, covering core subjects (Mathematics, English, Science) and one preferred elective subject to give them an academic boost during school breaks.</li>
+                <li>University-level tutoring across all fields and levels, offering detailed explanations, research support, and academic writing guidance to ensure success in even the most demanding courses.</li>
+                <li>Improving confidence, discipline, and study habits through one-on-one personalized coaching that encourages students to take ownership of their learning.</li>
+            </ul>
+            <h3>Why Choose Student Help?</h3>
+            <ul class="why-choose">
+                <li>Experienced and trained tutors who are passionate about teaching.</li>
+                <li>Customized learning plans that meet the exact needs of the student.</li>
+                <li>Flexible learning options — we offer in-person and online tutoring sessions.</li>
+                <li>Progress tracking and feedback to help parents stay informed and involved.</li>
+                <li>Affordable and transparent pricing, with no hidden fees.</li>
+            </ul>
+            <p>We don’t just tutor — we inspire students to believe in their abilities, overcome academic challenges, and reach their full potential.</p>
+            <h3>Contact Us</h3>
+            <p>📧 Email: <a href="mailto:info@studenthelp.cloud">info@studenthelp.cloud</a></p>
+            <p>📞 Call/WhatsApp: <a href="tel:+233596788173">0596788173</a></p>
+            <a href="#" class="cta-button" id="openFormAbout">Book Now</a>
+
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <div class="faq">
+                <div class="faq-item">
+                    <h4>What subjects do you offer tutoring in?</h4>
+                    <p>We offer tutoring in core subjects such as Mathematics, English, and Science across all levels. For SHS students, we also cover one preferred elective subject. University students receive support based on their specific courses or academic needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Which grades or levels do you support?</h4>
+                    <p>Our tutoring services cover:</p>
+                    <ul>
+                        <li>Grade 1 – Grade 6</li>
+                        <li>Grade 7 – Grade 10</li>
+                        <li>Senior High School (SHS) — vacation classes in core and elective subjects</li>
+                        <li>University (All levels) — subject-specific and project-based tutoring</li>
+                    </ul>
+                </div>
+                <div class="faq-item">
+                    <h4>Are the classes in-person or online?</h4>
+                    <p>We offer both in-person and online tutoring, depending on your preference and location. Our goal is to make learning as accessible and convenient as possible.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I choose the tutor for my child?</h4>
+                    <p>Yes, we aim to match students with tutors who suit their academic needs and learning style. If a change is needed at any point, we’re happy to assist.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I book a tutor?</h4>
+                    <p>Click the “Book Now” button to fill out the quick form. We’ll get in touch shortly after to confirm details and assign a suitable tutor.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long is each tutoring session?</h4>
+                    <p>Session durations vary based on the student’s level and learning plan. Typically, sessions last 1 to 2 hours, with flexible scheduling available.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What are your tuition fees?</h4>
+                    <p>Fees depend on the student’s grade, subject(s), and the frequency of sessions. Once you fill out the booking form, we’ll provide a custom quote based on your specific needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I contact you directly?</h4>
+                    <p>You can reach us via:</p>
+                    <ul>
+                        <li>📧 Email: <a href="mailto:info@studenthelp.cloud">info@studenthelp.cloud</a></li>
+                        <li>📞 Call/WhatsApp: <a href="tel:+233596788173">0596788173</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Students Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <span class="icon">👤</span>
+                    <h3>+95%</h3>
+                    <p>Reconnect rate with student loyalty an improved root real experience.</p>
+                </div>
+                <div class="testimonial-card">
+                    <span class="icon">💰</span>
+                    <h3>+61%</h3>
+                    <p>Faster repurchase speed. Make it easy for your customers to buy from you again in less time.</p>
+                </div>
+                <div class="testimonial-card">
+                    <span class="icon">⚡</span>
+                    <h3>+91%</h3>
+                    <p>Encourage per customer ontimes for real choiceneer and build a loyal customer confidence.</p>
+                </div>
+                <div class="testimonial-card">
+                    <span class="icon">🤲</span>
+                    <h3>+28%</h3>
+                    <p>Increase in average order value. Offer products that match customer preferences during the return and exchange process.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Student Help. All rights reserved.</p>
+    </footer>
+
+    <!-- Popup Form -->
+    <div class="popup-form" id="popupForm">
+        <div class="form-content">
+            <span class="close-form" id="closeForm">×</span>
+            <h2>Book a Tutoring Session</h2>
+            <form id="bookingForm">
+                <label for="studentName">Student Name <span>*</span></label>
+                <input type="text" id="studentName" name="studentName" required>
+                <label for="parentName">Parent Name <span>*</span></label>
+                <input type="text" id="parentName" name="parentName" required>
+                <label for="contactNumber">Student/Parent Contact Number <span>*</span></label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+                <label for="grade">Grade or Level</label>
+                <input type="text" id="grade" name="grade">
+                <button type="submit" class="cta-button">Submit Request</button>
+            </form>
+        </div>
     </div>
-  </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Tutoring Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Math Tutoring</h3>
-        <p>Master algebra, calculus, and more with personalized lessons.</p>
-      </div>
-      <div class="service-card">
-        <h3>Science Tutoring</h3>
-        <p>Explore physics, chemistry, and biology with expert guidance.</p>
-      </div>
-      <div class="service-card">
-        <h3>Language Arts</h3>
-        <p>Improve writing, reading, and communication skills.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Popup Form -->
-  <div class="popup-form" id="popupForm">
-    <div class="form-content">
-      <span class="close-form" id="closeForm">&times;</span>
-      <h2>Book a Tutoring Session</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <label for="subject">Subject</label>
-        <select id="subject" name="subject">
-          <option value="math">Math</option>
-          <option value="science">Science</option>
-          <option value="language">Language Arts</option>
-        </select>
-        <button type="submit" class="cta-button">Submit</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Student Help. All rights reserved.</p>
-  </footer>
-
-  <script src="src/assets/js/main.js"></script>
+    <script src="src/assets/js/main.js"></script>
 </body>
 </html>
