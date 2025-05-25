@@ -39,7 +39,7 @@ li {
 }
 
 .logo-img {
-    height: 40px;
+    height: 80px; /* Increased from 40px to 80px for better visibility */
 }
 
 .menu {
@@ -105,8 +105,7 @@ input[type="checkbox"] {
 }
 
 .home-sec .overlay {
-    background: rgba(0, 196, 204, 0.89);
-    min-height: 600px;
+    min-height: 600px; /* Removed the sea blue background */
     position: relative;
     z-index: 1;
 }
@@ -422,6 +421,7 @@ input[type="checkbox"] {
     font-size: 20px;
     font-weight: 600;
     font-family: 'Noto Sans Lepcha'!important;
+    text-align: center;
 }
 
 /* Modal Styles */
