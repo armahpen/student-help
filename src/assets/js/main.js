@@ -1,118 +1,69 @@
-// Sample course data
-const courses = [
-    {
-        id: 1,
-        title: 'Mathematics',
-        description: 'Master fundamental mathematical concepts',
-        level: 'Intermediate',
-        duration: '8 weeks'
-    },
-    {
-        id: 2,
-        title: 'Physics',
-        description: 'Understanding the laws of physics',
-        level: 'Advanced',
-        duration: '10 weeks'
-    },
-    {
-        id: 3,
-        title: 'Chemistry',
-        description: 'Explore chemical reactions and compounds',
-        level: 'Beginner',
-        duration: '12 weeks'
-    },
-    {
-        id: 4,
-        title: 'Biology',
-        description: 'Study of life and living organisms',
-        level: 'Intermediate',
-        duration: '10 weeks'
-    }
-];
-
-// Populate courses
-function populateCourses() {
-    const courseGrid = document.getElementById('courseGrid');
-    
-    courses.forEach(course => {
-        const courseCard = document.createElement('div');
-        courseCard.className = 'course-card';
-        courseCard.innerHTML = `
-            <h3>${course.title}</h3>
-            <p>${course.description}</p>
-            <div class="course-meta">
-                <span>Level: ${course.level}</span>
-                <span>Duration: ${course.duration}</span>
-            </div>
-            <button onclick="enrollCourse(${course.id})" class="cta-button">Enroll Now</button>
-        `;
-        courseGrid.appendChild(courseCard);
-    });
-}
-
-// Enroll in a course
-function enrollCourse(courseId) {
-    const course = courses.find(c => c.id === courseId);
-    if (course) {
-        alert(`Successfully enrolled in ${course.title}! We'll contact you with further details.`);
-    }
-}
-
-// Handle contact form submission
 document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+    // Contact Form Submission
+    const submitContact = document.getElementById('submitContact');
+    if (submitContact) {
+        submitContact.addEventListener('click', (e) => {
             e.preventDefault();
-            const formData = new FormData(contactForm);
-            
-            // In a real application, you would send this data to a server
             alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
         });
     }
 
-    // Initialize courses
-    populateCourses();
+    // Service Modal Handling
+    const learnMoreButtons = document.querySelectorAll('.btn-set');
+    const serviceModal = document.getElementById('serviceModal');
+    const closeModal = document.getElementById('closeModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
 
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+    const serviceDetails = {
+        personalized: {
+            title: 'Personalized Tutoring',
+            description: 'Our personalized tutoring sessions are designed to cater to each student’s unique learning style and pace. Whether your child needs help with Mathematics, English, or Science, our experienced tutors provide one-on-one support to ensure they excel academically.'
+        },
+        exam: {
+            title: 'Exam Preparation',
+            description: 'We offer comprehensive exam preparation for students at all levels, from junior high to university. Our tutors provide targeted guidance, practice tests, and study strategies to help students achieve top scores in their exams.'
+        },
+        flexible: {
+            title: 'Flexible Scheduling',
+            description: 'At Student Help, we understand that every student has a busy schedule. That’s why we offer flexible tutoring options, allowing you to choose between in-person and online sessions at times that work best for you.'
+        }
+    };
+
+    learnMoreButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+            const service = button.getAttribute('data-service');
+            modalTitle.textContent = serviceDetails[service].title;
+            modalDescription.textContent = serviceDetails[service].description;
+            serviceModal.style.display = 'flex';
         });
     });
 
-    // Add scroll-based animations
+    closeModal.addEventListener('click', () => {
+        serviceModal.style.display = 'none';
+    });
+
+    serviceModal.addEventListener('click', (e) => {
+        if (e.target === serviceModal) {
+            serviceModal.style.display = 'none';
+        }
+    });
+
+    // Fade-in Animation on Scroll
+    const sections = document.querySelectorAll('.container, .our-faculty, .contact-us');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
+                entry.target.classList.add('fade-in', 'visible');
             }
         });
     }, { threshold: 0.1 });
 
-    // Observe all sections for scroll animations
-    document.querySelectorAll('section').forEach(section => {
-        section.classList.add('fade-out');
+    sections.forEach(section => {
         observer.observe(section);
     });
-});
-
-// Add a class to header on scroll
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    if (header) {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    }
 });
