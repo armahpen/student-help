@@ -1,516 +1,69 @@
-* {
-    margin-top: 0px;
-    padding: 0px;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-.navbar_top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: -0.5rem 1rem !important;
-    background: #00c4cc;
-    color: #fff;
-    position: fixed;
-    z-index: 8;
-    width: 100%;
-    font-family: 'Noto Sans Lepcha'!important;
-}
-
-.nav-links {
-    padding-right: 10px;
-    padding-top: 10px;
-}
-
-.nav-links a {
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #ff6b81;
-}
-
-.logo-img {
-    height: 80px;
-    width: auto;
-}
-
-.menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-}
-
-.menu li:hover {
-    background-color: #ff6b81;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-
-.menu li {
-    padding: 5px 14px;
-}
-
-input[type="checkbox"] {
-    display: none;
-}
-
-.bar_icon {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        position: absolute;
-        background: rgba(0, 196, 204, 0.89);
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-        z-index: 5;
-    }
-    .menu li:hover {
-        display: inline-block;
-        background-color: #ff6b81;
-        transition: 0.3s ease;
-    }
-    
-    input[type="checkbox"]:checked ~ .menu {
-        display: block;
-    }
-    .bar_icon {
-        display: block;
-    }
-}
-
-.home-sec {
-    padding-top: 10px !important;
-    background: url("/images/medium-shot-kid-doing-homework (1).jpg") no-repeat center center;
-    background-size: cover;
-    color: #fff;
-    height: 600px;
-    background-attachment: fixed;
-    font-family: 'Noto Sans Lepcha'!important;
-    position: relative;
-}
-
-.home-sec .container {
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-}
-
-.home-sec .button-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.home-sec .button-group a {
-    text-decoration: none;
-}
-
-.home-sec h1 {
-    color: #fff;
-    font-weight: 700;
-    font-size: 50px;
-    text-transform: uppercase;
-    padding-bottom: 35px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border-bottom: 4px solid #ff6b81;
-}
-
-.home-sec button {
-    border: 0px;
-    padding: 12px 20px;
-    font-size: 18px;
-    line-height: 1.33;
-    border-radius: 6px;
-    color: #fff;
-    background: #00c4cc;
-    margin-right: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.home-sec button:hover {
-    background: #ff6b81;
-    transform: translateY(-3px);
-}
-
-.home-sec .btn_green {
-    border: 0px;
-    padding: 12px 20px;
-    font-size: 18px;
-    line-height: 1.33;
-    border-radius: 6px;
-    color: #fff;
-    background: #ff6b81;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.home-sec .btn_green:hover {
-    background: #00c4cc;
-    transform: translateY(-3px);
-}
-
-.container-fluid h2 {
-    font-size: 20px;
-    font-weight: 600;
-    padding: 20px 10px 15px 10px;
-    color: #00c4cc;
-}
-
-.container .col-sm-12 .font_size {
-    font-size: 25px;
-    font-weight: 600;
-    padding-bottom: 5px;
-    padding-top: 65px;
-    color: #000;
-    border-bottom: 4px solid #ff6b81;
-}
-
-.row_width {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px !important;
-}
-
-.p_width {
-    width: 50%;
-}
-
-.service-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-}
-
-.icon-round-border {
-    border: 10px double #00c4cc;
-    color: #00c4cc;
-    text-align: center;
-    padding-top: 15px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.fa {
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-}
-
-.col-sm-4 {
-    transition: transform 0.3s ease;
-}
-
-.col-sm-4:hover {
-    transform: translateY(-10px);
-}
-
-.btn-set {
-    background: #00c4cc;
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn-set:hover {
-    background: #ff6b81;
-}
-
-.our-faculty {
-    padding-top: 10px;
-    padding-bottom: 60px;
-    background: url("/images/testimonials-bg.jpg") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Noto Sans Lepcha'!important;
-    position: relative;
-}
-
-.our-faculty::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("/images/testimonials-pattern.png") repeat;
-    opacity: 0.1;
-}
-
-.our-faculty .overlay {
-    background: rgba(0, 196, 204, 0.89);
-    min-height: 700px;
-    position: relative;
-}
-
-.our-faculty .font_size {
-    font-size: 25px;
-    font-weight: 600;
-    padding-bottom: 5px;
-    padding-top: 65px;
-    color: #fff;
-    border-bottom: 4px solid #ff6b81;
-}
-
-.hadding_pt {
-    padding: 75px 0px 20px 0px;
-    font-family: 'Noto Sans Lepcha'!important;
-}
-
-.img_border_double {
-    border: 10px double #ff6b81;
-}
-
-.hr_5 {
-    border: 2px solid #ff6b81;
-    border-radius: 5px;
-}
-
-.hadding_bt {
-    border-bottom: 3px solid #ff6b81;
-}
-
-.course-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.bg_gray1, .bg_gray, .bg_blue {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid gainsboro;
-    border-radius: 5px;
-    padding: 12px;
-    margin-top: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.bg_gray1 {
-    background: gainsboro;
-}
-
-.bg_gray {
-    background: gainsboro;
-}
-
-.bg_gray1:hover, .bg_gray:hover {
-    background: #e0e0e0;
-}
-
-.bg_blue {
-    border: 1px solid #bce8f1;
-    background: #d9edf7;
-    color: #31708f;
-}
-
-.bg_blue:hover {
-    background: #c1e2f0;
-}
-
-.card {
-    border: none !important;
-}
-
-.contact-us {
-    padding-top: 10px;
-    padding-bottom: 60px;
-    background: url("/images/contact-bg.jpg") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.contact-us::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(0, 196, 204, 0.5), rgba(255, 107, 129, 0.5));
-}
-
-.contact-us .overlay {
-    background: rgba(0, 196, 204, 0.64);
-    min-height: 700px;
-    font-family: 'Noto Sans Lepcha'!important;
-    position: relative;
-}
-
-.input_size {
-    background: none;
-    width: 60%;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 8px;
-    margin-top: 15px;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    transition: border-color 0.3s ease;
-}
-
-.input_size:focus {
-    border-color: #ff6b81;
-    outline: none;
-}
-
-.input_btn {
-    background: #00c4cc;
-    color: #fff;
-    margin-top: 20px;
-    border-radius: 5px;
-    letter-spacing: 4px;
-    width: 60%;
-    cursor: pointer;
-    border: 1px solid #ff6b81;
-    height: 45px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.input_btn:hover {
-    background: #ff6b81;
-    transform: translateY(-3px);
-}
-
-.fa_social {
-    border: 5px double #00c4cc;
-    color: #00c4cc;
-    width: 50px;
-    height: 50px;
-    border-radius: 41px;
-    padding-top: 5px;
-    font-size: 30px !important;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-.fa_social:hover {
-    color: #ff6b81;
-    border-color: #ff6b81;
-}
-
-.footer {
-    padding: 15px 20px;
-    background-color: #333;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Noto Sans Lepcha'!important;
-    text-align: center;
-}
-
-.footer-logo {
-    height: 50px;
-    width: auto;
-    margin-bottom: 10px;
-}
-
-/* Modal Styles */
-.service-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    align-items: center;
-    justify-content: center;
-    z-index: 2000;
-}
-
-.modal-content {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 500px;
-    position: relative;
-    text-align: center;
-}
-
-.close-modal {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    color: #ff6b81;
-}
-
-.modal-content h2 {
-    color: #00c4cc;
-    margin-bottom: 20px;
-    font-family: 'Noto Sans Lepcha'!important;
-}
-
-.modal-content p {
-    color: #333;
-    font-size: 16px;
-}
-
-/* Animations */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-    .col-sm-4 {
-        margin-top: 30px;
+document.addEventListener('DOMContentLoaded', () => {
+    // Contact Form Submission
+    const submitContact = document.getElementById('submitContact');
+    if (submitContact) {
+        submitContact.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        });
     }
 
-    .hadding_pt {
-        padding: 75px 0px 20px 0px;
-        font-size: 27px;
-    }
+    // Service Modal Handling
+    const learnMoreButtons = document.querySelectorAll('.btn-set');
+    const serviceModal = document.getElementById('serviceModal');
+    const closeModal = document.getElementById('closeModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
 
-    .p_width {
-        width: 100%;
-    }
+    const serviceDetails = {
+        personalized: {
+            title: 'Personalized Tutoring',
+            description: 'Our personalized tutoring sessions are designed to cater to each student’s unique learning style and pace. Whether your child needs help with Mathematics, English, or Science, our experienced tutors provide one-on-one support to ensure they excel academically.'
+        },
+        exam: {
+            title: 'Exam Preparation',
+            description: 'We offer comprehensive exam preparation for students at all levels, from junior high to university. Our tutors provide targeted guidance, practice tests, and study strategies to help students achieve top scores in their exams.'
+        },
+        flexible: {
+            title: 'Flexible Scheduling',
+            description: 'At Student Help, we understand that every student has a busy schedule. That’s why we offer flexible tutoring options, allowing you to choose between in-person and online sessions at times that work best for you.'
+        }
+    };
 
-    .input_size {
-        width: 100%;
-    }
+    learnMoreButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const service = button.getAttribute('data-service');
+            modalTitle.textContent = serviceDetails[service].title;
+            modalDescription.textContent = serviceDetails[service].description;
+            serviceModal.style.display = 'flex';
+        });
+    });
 
-    .hadding_h2 {
-        font-size: 15px !important;
-    }
+    closeModal.addEventListener('click', () => {
+        serviceModal.style.display = 'none';
+    });
 
-    .hadding_h1 {
-        font-size: 27px !important;
-    }
+    serviceModal.addEventListener('click', (e) => {
+        if (e.target === serviceModal) {
+            serviceModal.style.display = 'none';
+        }
+    });
 
-    .input_btn {
-        width: 100%;
-    }
-}
+    // Fade-in Animation on Scroll
+    const sections = document.querySelectorAll('.container, .our-faculty, .contact-us');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in', 'visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
