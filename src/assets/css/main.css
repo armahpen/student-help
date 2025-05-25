@@ -1,240 +1,512 @@
-<head>
-    <title>Student Help - Tutoring Services</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="src/assets/css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans Lepcha">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body id="home">
-    <nav class="navbar_top">
-        <div class="logo">
-            <img src="src/assets/images/student-help-logo.png" alt="Student Help Logo" class="logo-img">
-        </div>
-        <ul class="nav-links">
-            <input type="checkbox" id="checkbox_toggle"/>
-            <label for="checkbox_toggle" class="bar_icon">☰</label>
-            <div class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#course">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
+* {
+    margin-top: 0px;
+    padding: 0px;
+}
 
-    <div class="home-sec">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h3>Transform Your Education</h3>
-                        <h1 class="hadding_h1">EMPOWER YOUR LEARNING JOURNEY</h1>
-                        <img src="src/assets/images/hero-banner.png" alt="Hero Banner" class="hero-banner">
-                        <div class="my-5"><button>GET STARTED</button> <button class="btn_green">VIEW SERVICES</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+a {
+    text-decoration: none;
+}
 
-    <div class="container-fluid" style="background: #e9e9e9;">
-        <div class="row text-center">
-            <div class="col-sm-12">
-                <h2 class="hadding_h2">
-                    <i class="fa fa-circle-o-notch"></i>
-                    WELCOME TO STUDENT HELP
-                    <i class="fa fa-circle-o-notch"></i>
-                </h2>
-            </div>
-        </div>
-    </div>
+li {
+    list-style: none;
+}
 
-    <div class="container" id="features">
-        <div class="row text-center row_width">
-            <div class="p_width">
-                <h1 align="center" class="hadding_pt"><span class="hadding_bt">OUR SERVICES</span></h1>
-                <p>
-                    At Student Help, we provide personalized tutoring to help students excel at every academic level, from foundational education to university studies.
-                </p>
-            </div>
-        </div>
-    </div>
+.navbar_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: -0.5rem 1rem !important;
+    background: #00c4cc;
+    color: #fff;
+    position: fixed;
+    z-index: 8;
+    width: 100%;
+    font-family: 'Noto Sans Lepcha'!important;
+}
 
-    <div class="container my-5">
-        <div class="row text-center">
-            <div class="col-sm-4">
-                <img src="src/assets/images/service-icon1.png" alt="Personalized Tutoring Icon" class="service-icon">
-                <h3>Personalized Tutoring</h3>
-                <hr class="hr_5" />
-                <hr class="hr_5" />
-                <p>Tailored one-on-one sessions to meet each student’s unique needs and learning style.</p>
-                <a href="#" class="btn btn-info btn-set" data-service="personalized">LEARN MORE</a>
-            </div>
-            <div class="col-sm-4">
-                <img src="src/assets/images/service-icon2.png" alt="Exam Preparation Icon" class="service-icon">
-                <h3>Exam Preparation</h3>
-                <hr class="hr_5" />
-                <hr class="hr_5" />
-                <p>Comprehensive guidance to help students succeed in exams at all levels.</p>
-                <a href="#" class="btn btn-info btn-set" data-service="exam">LEARN MORE</a>
-            </div>
-            <div class="col-sm-4">
-                <img src="src/assets/images/service-icon3.png" alt="Flexible Scheduling Icon" class="service-icon">
-                <h3>Flexible Scheduling</h3>
-                <hr class="hr_5" />
-                <hr class="hr_5" />
-                <p>Choose in-person or online sessions that fit your schedule.</p>
-                <a href="#" class="btn btn-info btn-set" data-service="flexible">LEARN MORE</a>
-            </div>
-        </div>
-    </div>
+.nav-links {
+    padding-right: 10px;
+    padding-top: 10px;
+}
 
-    <div class="our-faculty" id="testimonials">
-        <div class="overlay">
-            <div class="container">
-                <div class="row text-center row_width">
-                    <div class="p_width">
-                        <h1 class="hadding_pt"><span class="hadding_bt">WHAT OUR STUDENTS SAY</span></h1>
-                        <p>
-                            Hear from students who have transformed their learning journey with Student Help.
-                        </p>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-sm-4">
-                        <h3>+95%</h3>
-                        <hr class="hr_5" />
-                        <h4>Reconnect Rate</h4>
-                        <p>Reconnect rate with student loyalty an improved root real experience.</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h3>+61%</h3>
-                        <hr class="hr_5" />
-                        <h4>Faster Repurchase</h4>
-                        <p>Make it easy for your customers to buy from you again in less time.</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h3>+91%</h3>
-                        <hr class="hr_5" />
-                        <h4>Encourage Engagement</h4>
-                        <p>Encourage per customer ontimes for real choiceneer and build a loyal customer confidence.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+.nav-links a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
 
-    <div class="container my-5" id="course">
-        <div class="row text-center row_width">
-            <div class="p_width">
-                <h1 align="center" class="hadding_pt"><span class="hadding_bt">OUR COURSES</span></h1>
-                <p align="center">
-                    We offer personalized tutoring for learners across all academic levels.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="src/assets/images/courses-img.jpg" width="100%" alt="Students Learning">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="bg_gray1">
-                            <img src="src/assets/images/course-icon1.png" alt="Primary School Icon" class="course-icon">
-                            <strong>Primary School</strong> (Grade 1 – Grade 6)
-                        </div>
-                        <div class="bg_gray">
-                            <img src="src/assets/images/course-icon2.png" alt="Junior High Icon" class="course-icon">
-                            <strong>Junior High</strong> (Grade 7 – Grade 10)
-                        </div>
-                        <div class="bg_gray">
-                            <img src="src/assets/images/course-icon3.png" alt="SHS Icon" class="course-icon">
-                            <strong>SHS</strong> Vacation Classes
-                        </div>
-                        <div class="bg_blue">
-                            <img src="src/assets/images/course-icon4.png" alt="University Icon" class="course-icon">
-                            <h1><strong>University</strong></h1>
-                            <hr />
-                            <h1>All Levels</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+.nav-links a:hover {
+    color: #ff6b81;
+}
 
-    <div class="contact-us my-5" id="contact">
-        <div class="overlay">
-            <div class="container">
-                <div class="row text-center row_width">
-                    <div class="p_width">
-                        <h1 align="center" class="hadding_pt"><span class="hadding_bt">CONTACT US</span></h1>
-                        <p align="center">
-                            Reach out to us for any inquiries or to book a tutoring session.
-                        </p>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-sm-12">
-                        <input type="text" class="input_size" name="name" id="name" placeholder="Your Name"/>
-                        <input type="email" class="input_size" name="email" id="email" placeholder="Your Email"/>
-                        <textarea class="input_size" rows="7" name="message" id="message" placeholder="Message"></textarea>
-                        <button type="submit" class="input_btn" id="submitContact">SUBMIT REQUEST</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+.logo-img {
+    height: 40px;
+}
 
-    <div class="container my">
-        <div class="row text-center">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="src/assets/images/map-placeholder.png" width="100%" style="border:1px solid #ff6b81;" alt="Map Placeholder">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <h1><span class="">Contact Information</span></h1>
-                <p>📧 Email: <a href="mailto:info@studenthelp.cloud">info@studenthelp.cloud</a></p>
-                <p>📞 Call/WhatsApp: <a href="tel:+233596788173">0596788173</a></p>
-                <div>
-                    <i class="fa fa-facebook fa_social"></i>
-                    <i class="fa fa-linkedin fa_social"></i>
-                    <i class="fa fa-code fa_social"></i>
-                </div>
-            </div>
-        </div>
-    </div>
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
 
-    <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col-sm-12 footer">
-                © 2025 Student Help. All Rights Reserved.
-            </div>
-        </div>
-    </div>
+.menu li:hover {
+    background-color: #ff6b81;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
 
-    <!-- Service Modal -->
-    <div class="service-modal" id="serviceModal">
-        <div class="modal-content">
-            <span class="close-modal" id="closeModal">×</span>
-            <h2 id="modalTitle"></h2>
-            <p id="modalDescription"></p>
-        </div>
-    </div>
+.menu li {
+    padding: 5px 14px;
+}
 
-    <script src="src/assets/js/main.js"></script>
-</body>
+input[type="checkbox"] {
+    display: none;
+}
+
+.bar_icon {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background: rgba(0, 196, 204, 0.89);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        z-index: 5;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #ff6b81;
+        transition: 0.3s ease;
+    }
+    
+    input[type="checkbox"]:checked ~ .menu {
+        display: block;
+    }
+    .bar_icon {
+        display: block;
+    }
+}
+
+.home-sec {
+    padding-top: 10px !important;
+    background: url("../images/medium-shot-kid-doing-homework (1).jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    height: 600px;
+    background-attachment: fixed;
+    font-family: 'Noto Sans Lepcha'!important;
+    position: relative;
+}
+
+.home-sec .overlay {
+    background: rgba(0, 196, 204, 0.89);
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-sec .overlay .container .row .col-sm-12 {
+    text-align: center;
+    z-index: 3;
+    padding-top: 145px;
+}
+
+.home-sec h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 4px solid #ff6b81;
+}
+
+.hero-banner {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.home-sec button {
+    border: 0px;
+    padding: 12px 20px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    color: #fff;
+    background: #00c4cc;
+    margin-right: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-sec button:hover {
+    background: #ff6b81;
+    transform: translateY(-3px);
+}
+
+.home-sec .btn_green {
+    border: 0px;
+    padding: 12px 20px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    color: #fff;
+    background: #ff6b81;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-sec .btn_green:hover {
+    background: #00c4cc;
+    transform: translateY(-3px);
+}
+
+.container-fluid h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 10px 15px 10px;
+    color: #00c4cc;
+}
+
+.container .col-sm-12 .font_size {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 65px;
+    color: #000;
+    border-bottom: 4px solid #ff6b81;
+}
+
+.row_width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px !important;
+}
+
+.p_width {
+    width: 50%;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.icon-round-border {
+    border: 10px double #00c4cc;
+    color: #00c4cc;
+    text-align: center;
+    padding-top: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.col-sm-4 {
+    transition: transform 0.3s ease;
+}
+
+.col-sm-4:hover {
+    transform: translateY(-10px);
+}
+
+.btn-set {
+    background: #00c4cc;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-set:hover {
+    background: #ff6b81;
+}
+
+.our-faculty {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url("../images/testimonials-bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Noto Sans Lepcha'!important;
+    position: relative;
+}
+
+.our-faculty::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/testimonials-pattern.png") repeat;
+    opacity: 0.1;
+}
+
+.our-faculty .overlay {
+    background: rgba(0, 196, 204, 0.89);
+    min-height: 700px;
+    position: relative;
+}
+
+.our-faculty .font_size {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 65px;
+    color: #fff;
+    border-bottom: 4px solid #ff6b81;
+}
+
+.hadding_pt {
+    padding: 75px 0px 20px 0px;
+    font-family: 'Noto Sans Lepcha'!important;
+}
+
+.img_border_double {
+    border: 10px double #ff6b81;
+}
+
+.hr_5 {
+    border: 2px solid #ff6b81;
+    border-radius: 5px;
+}
+
+.hadding_bt {
+    border-bottom: 3px solid #ff6b81;
+}
+
+.course-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.bg_gray1, .bg_gray, .bg_blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.bg_gray1 {
+    background: gainsboro;
+}
+
+.bg_gray {
+    background: gainsboro;
+}
+
+.bg_gray1:hover, .bg_gray:hover {
+    background: #e0e0e0;
+}
+
+.bg_blue {
+    border: 1px solid #bce8f1;
+    background: #d9edf7;
+    color: #31708f;
+}
+
+.bg_blue:hover {
+    background: #c1e2f0;
+}
+
+.card {
+    border: none !important;
+}
+
+.contact-us {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url("../images/contact-bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 196, 204, 0.5), rgba(255, 107, 129, 0.5));
+}
+
+.contact-us .overlay {
+    background: rgba(0, 196, 204, 0.64);
+    min-height: 700px;
+    font-family: 'Noto Sans Lepcha'!important;
+    position: relative;
+}
+
+.input_size {
+    background: none;
+    width: 60%;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input_size:focus {
+    border-color: #ff6b81;
+    outline: none;
+}
+
+.input_btn {
+    background: #00c4cc;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    width: 60%;
+    cursor: pointer;
+    border: 1px solid #ff6b81;
+    height: 45px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.input_btn:hover {
+    background: #ff6b81;
+    transform: translateY(-3px);
+}
+
+.fa_social {
+    border: 5px double #00c4cc;
+    color: #00c4cc;
+    width: 50px;
+    height: 50px;
+    border-radius: 41px;
+    padding-top: 5px;
+    font-size: 30px !important;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.fa_social:hover {
+    color: #ff6b81;
+    border-color: #ff6b81;
+}
+
+.footer {
+    padding: 15px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Noto Sans Lepcha'!important;
+}
+
+/* Modal Styles */
+.service-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ff6b81;
+}
+
+.modal-content h2 {
+    color: #00c4cc;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans Lepcha'!important;
+}
+
+.modal-content p {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .col-sm-4 {
+        margin-top: 30px;
+    }
+
+    .hadding_pt {
+        padding: 75px 0px 20px 0px;
+        font-size: 27px;
+    }
+
+    .p_width {
+        width: 100%;
+    }
+
+    .input_size {
+        width: 100%;
+    }
+
+    .hadding_h2 {
+        font-size: 15px !important;
+    }
+
+    .hadding_h1 {
+        font-size: 27px !important;
+    }
+
+    .input_btn {
+        width: 100%;
+    }
+}
