@@ -39,7 +39,7 @@ li {
 }
 
 .logo-img {
-    height: 80px; /* Increased from 40px to 80px for better visibility */
+    height: 80px;
 }
 
 .menu {
@@ -104,16 +104,20 @@ input[type="checkbox"] {
     position: relative;
 }
 
-.home-sec .overlay {
-    min-height: 600px; /* Removed the sea blue background */
-    position: relative;
-    z-index: 1;
+.home-sec .container {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
 }
 
-.home-sec .overlay .container .row .col-sm-12 {
-    text-align: center;
-    z-index: 3;
-    padding-top: 145px;
+.home-sec .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-sec .button-group a {
+    text-decoration: none;
 }
 
 .home-sec h1 {
@@ -422,6 +426,11 @@ input[type="checkbox"] {
     font-weight: 600;
     font-family: 'Noto Sans Lepcha'!important;
     text-align: center;
+}
+
+.footer-logo {
+    height: 50px; /* Adjusted size for footer logo */
+    margin-bottom: 10px;
 }
 
 /* Modal Styles */
