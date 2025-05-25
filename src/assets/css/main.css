@@ -39,7 +39,7 @@ li {
 }
 
 .logo-img {
-    height: 40px;
+    height: 80px;
 }
 
 .menu {
@@ -95,7 +95,7 @@ input[type="checkbox"] {
 
 .home-sec {
     padding-top: 10px !important;
-    background: url("../src/assets/images/medium-shot-kid-doing-homework (1).jpg") no-repeat center center;
+    background: url("/src/assets/images/medium-shot-kid-doing-homework (1).jpg") no-repeat center center;
     background-size: cover;
     color: #fff;
     height: 600px;
@@ -104,17 +104,20 @@ input[type="checkbox"] {
     position: relative;
 }
 
-.home-sec .overlay {
-    background: rgba(0, 196, 204, 0.89);
+.home-sec .container {
     min-height: 600px;
-    position: relative;
-    z-index: 1;
+    display: flex;
+    align-items: center;
 }
 
-.home-sec .overlay .container .row .col-sm-12 {
-    text-align: center;
-    z-index: 3;
-    padding-top: 145px;
+.home-sec .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-sec .button-group a {
+    text-decoration: none;
 }
 
 .home-sec h1 {
@@ -126,13 +129,6 @@ input[type="checkbox"] {
     margin-bottom: 20px;
     margin-top: 20px;
     border-bottom: 4px solid #ff6b81;
-}
-
-.hero-banner {
-    width: 100%;
-    max-width: 300px;
-    margin: 20px auto;
-    display: block;
 }
 
 .home-sec button {
@@ -241,7 +237,7 @@ input[type="checkbox"] {
 .our-faculty {
     padding-top: 10px;
     padding-bottom: 60px;
-    background: url("src/assets/images/testimonials-bg.jpg") no-repeat center center;
+    background: url("/src/assets/images/testimonials-bg.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Noto Sans Lepcha'!important;
@@ -255,7 +251,7 @@ input[type="checkbox"] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("src/assets/images/testimonials-pattern.png") repeat;
+    background: url("/src/assets/images/testimonials-pattern.png") repeat;
     opacity: 0.1;
 }
 
@@ -339,7 +335,7 @@ input[type="checkbox"] {
 .contact-us {
     padding-top: 10px;
     padding-bottom: 60px;
-    background: url("src/assets/images/contact-bg.jpg") no-repeat center center;
+    background: url("/src/assets/images/contact-bg.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -422,6 +418,12 @@ input[type="checkbox"] {
     font-size: 20px;
     font-weight: 600;
     font-family: 'Noto Sans Lepcha'!important;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 10px;
 }
 
 /* Modal Styles */
